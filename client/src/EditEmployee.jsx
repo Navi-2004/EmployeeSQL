@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate} from 'react-router-dom';
-import axios from 'axios';
+import { useParams, useNavigate } from 'react-router-dom';
+import axios from './axiosConfig';
 
 const EditEmployee = () => {
   const { id } = useParams();
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const [employeeDetails, setEmployeeDetails] = useState({
     name: '',
     id: '',
     department: '',
-    dob: null,
-    gender: '',
+    dob: '', // Change to string format
+    gender: '', // Make sure initial state matches one of the options
     designation: '',
     salary: ''
   });
@@ -31,13 +31,6 @@ const EditEmployee = () => {
     setEmployeeDetails(prevState => ({
       ...prevState,
       [name]: value
-    }));
-  };
-
-  const handleDateChange = date => {
-    setEmployeeDetails(prevState => ({
-      ...prevState,
-      dob: date
     }));
   };
 

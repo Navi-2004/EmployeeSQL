@@ -2,16 +2,20 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const cors = require('cors');
+const fs = require('fs');
+require("dotenv").config();
 
 const app = express();
 const port = 5000;
 app.use(cors());
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'employee'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: 3306,
+  ssl: { ca: fs.readFileSync('./DigiCertGlobalRootCA.crt.pem') }
 });
 
 connection.connect((err) => {
