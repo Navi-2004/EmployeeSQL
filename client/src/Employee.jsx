@@ -68,7 +68,7 @@ const Employee = () => {
 
     try {
       // Submit the form
-      const response = await axios.post('http://localhost:5000/submitEmployee', employeeDetails);
+      const response = await axios.post('/submitEmployee', employeeDetails);
       console.log('Form data submitted successfully:', response.data);
       setEmployeeData(prev => [...prev, response.data]);
 

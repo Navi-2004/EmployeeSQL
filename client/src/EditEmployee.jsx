@@ -17,7 +17,7 @@ const EditEmployee = () => {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/getEmployee/${id}`)
+    axios.get(`/getEmployee/${id}`)
       .then(response => {
         setEmployeeDetails(response.data);
       })
@@ -37,7 +37,7 @@ const EditEmployee = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/updateEmployee/${id}`, employeeDetails);
+      await axios.put(`/updateEmployee/${id}`, employeeDetails);
       alert('Employee details updated successfully');
       navigate("/"); // Redirect to home page after successful update
     } catch (error) {
