@@ -7,7 +7,12 @@ require("dotenv").config();
 
 const app = express();
 const port = 5000;
-app.use(cors());
+const corsOptions = {
+  origin: ['https://employee-sql.vercel.app/', 'http://localhost:3000']
+};
+
+app.use(cors(corsOptions));
+
 
 const connection = mysql.createConnection({
   host: process.env.DB_HOST,
