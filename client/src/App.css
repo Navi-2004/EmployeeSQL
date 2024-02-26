@@ -105,3 +105,11 @@ tr:hover {
   text-align: center;
   margin-top: 20px;
 }
+.but{
+  background-color: #152238;
+  color: white;
+  cursor: pointer;
+  width:2%;
+  padding-right: 12px;
+  margin:4px;
+}
