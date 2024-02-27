@@ -207,6 +207,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
         <form onSubmit={handleSubmit}>
           <label>
             Employee name:{" "}
+            <br />
             <input
               type="text"
               name="name"
@@ -217,6 +218,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
           <br />
           <label>
             ID: {" "}
+            <br />
             <input
               type="text"
               name="id"
@@ -227,6 +229,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
           <br />
           <label>
             Department:{"   "}
+            <br />
             <select
               name="department"
               value={employeeDetails.department}
@@ -246,6 +249,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
           <br />
           <label>
             Date Of Birth : {" "}
+              <br/>
             <input
               type="date"
               name="dob"
@@ -258,6 +262,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
           <br />
           <label>
             Gender:
+            <br />
             <input
               type="radio"
               name="gender"
@@ -266,6 +271,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
               onChange={handleChange}
             />
             Male
+            <br />
             <input
               type="radio"
               name="gender"
@@ -277,7 +283,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
           </label>
           <br />
           <label>
-            Designation: {"                             "}
+            Designation: {"                             "}<br/>
             <select
               name="designation"
               value={employeeDetails.designation}
@@ -297,6 +303,7 @@ const [employeeOfTheWeek, setEmployeeOfTheWeek] = useState(null);
           <br />
           <label>
             Salary:
+            <br/>
             <input
               type="text"
               name="salary"
