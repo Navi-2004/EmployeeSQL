@@ -8,7 +8,7 @@ require("dotenv").config();
 const app = express();
 const port = 5000;
 const corsOptions = {
-  origin: ['https://employee-sql.vercel.app/', 'http://localhost:3000']
+  origin: ['https://employee-sql.vercel.app', 'http://localhost:3000']
 };
 
 app.use(cors(corsOptions));

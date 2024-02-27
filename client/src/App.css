@@ -1,0 +1,226 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #ccc;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  align-items:flex-start;
+
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+h1{
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+input[type="text"],
+button {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input{
+align-items: flex-end;
+}
+button {
+  background-color: #152238;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c2e4a;
+}
+
+p {
+  color: red;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%; /* Change width to 100% to ensure responsiveness */
+  margin-top: 20px;
+  
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+
+.emp{
+  text-align: center;
+  margin-top: 20px;
+}
+.but{
+  background-color: #152238;
+  color: white;
+  cursor: pointer;
+  width:2%;
+  padding-right: 20px;
+  margin:4px;
+}
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #152238;
+  transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #f0f0f0;
+}
+
+.page-item.disabled .page-link {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.page-item.active .page-link {
+  background-color:  #152238;
+  color: #fff;
+  border-color:  #152238;
+}
+
+select{
+  
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Adjust width as needed */
+  
+  
+}
+
+/* EmployeeOfTheWeekCard.css *//* EmployeeOfTheWeekCard.css */
+/* EmployeeOfTheWeekCard.css */
+.employee-of-the-week-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 500px;
+  height: 260px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.employee-of-the-week-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  background-color: #e9ecef;
+  color: #fff;
+}
+
+.employee-of-the-week-card h2 {
+  color: #343a40;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.employee-of-the-week-card p {
+  color: #6c757d;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.employee-of-the-week-card .congratulations {
+  color: #28a745;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.butt{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
